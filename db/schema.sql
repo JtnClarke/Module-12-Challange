@@ -1,14 +1,14 @@
-DROP DATABASE IF EXISTS employee-tracker;
+DROP DATABASE IF EXISTS employee_tracker;
 CREATE DATABASE  employee_tracker;
 
-USE employer-db
+USE employee_tracker
 
 CREATE TABLE department (
     id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(30) NOT NULL,
+    dept_name VARCHAR(30) NOT NULL,
 
     PRIMARY KEY (id),
-    UNIQUE KEY (name)
+    UNIQUE KEY (dept_name)
 )
 CREATE TABLE role (
     id INT NOT NULL AUTO_INCREMENT,
